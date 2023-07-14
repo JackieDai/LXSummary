@@ -12,10 +12,7 @@ class RootTabBarVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let home = HomeVC()
-        let navi = RootNavigationVC(rootViewController: home)
-//        home.tabBarItem = .init(title: "Home", image: R.image.home, tag: <#T##Int#>)
-
+        viewControllers = AppBootstrap.rootRouters.map(\.routerVc)
     }
 
     /*

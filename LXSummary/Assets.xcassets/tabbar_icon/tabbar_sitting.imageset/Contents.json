@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "tabbar_sitting.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "tabbar_sitting.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
