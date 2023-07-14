@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "app_icon_prd_release.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
