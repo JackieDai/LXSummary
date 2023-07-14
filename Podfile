@@ -5,7 +5,7 @@ use_frameworks!
 def common_pods
   
   # Swift style
-  pod 'SwiftLint', '~> 0.52.2'
+  pod 'SwiftLint', '0.47.1'
   
   # Resource manager
   pod 'R.swift', '7.3.0'

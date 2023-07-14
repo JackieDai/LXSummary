@@ -1,0 +1,38 @@
+# This configuration specifies which rules to be used for auto correction. we have the other configuration file .swiftlint.yml for linting only without auto correction
+only_rules:
+- anyobject_protocol
+- closing_brace
+- closure_end_indentation
+- closure_parameter_position
+- closure_spacing
+- colon
+- comma
+- comment_spacing
+- empty_parameters
+- empty_parentheses_with_trailing_closure
+- leading_whitespace
+- literal_expression_end_indentation
+- mark
+- modifier_order
+- no_space_in_method_call
+- opening_brace
+- operator_usage_whitespace
+- protocol_property_accessors_order
+- redundant_discardable_let
+- redundant_type_annotation
+- return_arrow_whitespace
+- statement_position
+- trailing_comma
+- trailing_newline
+- trailing_semicolon
+- trailing_whitespace
+- unneeded_parentheses_in_closure_argument
+- vertical_whitespace_between_cases
+- vertical_whitespace_closing_braces
+- vertical_whitespace
+- void_return
+
+excluded:
+- Carthage
+- Pods
+- R.generated.swift

@@ -14,7 +14,6 @@ class TeaVC: BaseVC {
 
         // Do any additional setup after loading the view.
     }
-    
 
     /*
     // MARK: - Navigation
@@ -25,5 +24,4 @@ class TeaVC: BaseVC {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
