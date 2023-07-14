@@ -386,6 +386,7 @@
 				DEVELOPMENT_TEAM = 66A78X26DT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LXSummary/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "UAT-Debug";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -507,6 +508,7 @@
 				DEVELOPMENT_TEAM = 66A78X26DT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LXSummary/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "UAT-Release";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -688,6 +690,7 @@
 				DEVELOPMENT_TEAM = 66A78X26DT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LXSummary/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "总结-Debug";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -717,6 +720,7 @@
 				DEVELOPMENT_TEAM = 66A78X26DT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LXSummary/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "总结";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
