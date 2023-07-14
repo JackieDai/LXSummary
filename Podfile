@@ -3,6 +3,9 @@ platform :ios, '13.0'
 use_frameworks!
 
 def common_pods
+  # Resource manager
+  pod 'R.swift', '7.3.0'
+  
   # RxSwift
   pod 'RxSwift', '6.5.0'
   pod 'RxCocoa', '6.5.0'
