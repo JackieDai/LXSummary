@@ -30,6 +30,7 @@
 		FB96EB4E2A60DEB80068F81D /* LXSummaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96EB4D2A60DEB80068F81D /* LXSummaryUITestsLaunchTests.swift */; };
 		FBC95C982A613D5F00558E0C /* AppBootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC95C972A613D5F00558E0C /* AppBootstrap.swift */; };
 		FBC95C9A2A613E6D00558E0C /* AppBootstrap+rootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC95C992A613E6D00558E0C /* AppBootstrap+rootRouter.swift */; };
+		FBCEAC762A6517A2006BEA3B /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCEAC752A6517A2006BEA3B /* MyTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		FB96EB4D2A60DEB80068F81D /* LXSummaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXSummaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FBC95C972A613D5F00558E0C /* AppBootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBootstrap.swift; sourceTree = "<group>"; };
 		FBC95C992A613E6D00558E0C /* AppBootstrap+rootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppBootstrap+rootRouter.swift"; sourceTree = "<group>"; };
+		FBCEAC752A6517A2006BEA3B /* MyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
 		FE50B9CF20090C25BED3A9E5 /* Pods_LXSummaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXSummaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -197,6 +199,7 @@
 		FB772A1A2A60FE3D00BE41DC /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FBCEAC742A651785006BEA3B /* CustomTabBar */,
 				FB772A1D2A60FE7100BE41DC /* BaseVC.swift */,
 				FB772A302A61136C00BE41DC /* RootTabBarVC.swift */,
 				FB772A322A61138B00BE41DC /* RootNavigationVC.swift */,
@@ -322,6 +325,14 @@
 				FB96EB4D2A60DEB80068F81D /* LXSummaryUITestsLaunchTests.swift */,
 			);
 			path = LXSummaryUITests;
+			sourceTree = "<group>";
+		};
+		FBCEAC742A651785006BEA3B /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FBCEAC752A6517A2006BEA3B /* MyTabBar.swift */,
+			);
+			path = CustomTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -611,6 +622,7 @@
 				FBC95C9A2A613E6D00558E0C /* AppBootstrap+rootRouter.swift in Sources */,
 				FBC95C982A613D5F00558E0C /* AppBootstrap.swift in Sources */,
 				FB96EB2B2A60DEB70068F81D /* AppDelegate.swift in Sources */,
+				FBCEAC762A6517A2006BEA3B /* MyTabBar.swift in Sources */,
 				FB772A2F2A61134800BE41DC /* LoginVC.swift in Sources */,
 				FB96EB2D2A60DEB70068F81D /* SceneDelegate.swift in Sources */,
 				FB772A1E2A60FE7100BE41DC /* BaseVC.swift in Sources */,
