@@ -80,7 +80,7 @@ extension RootRouter {
         let tabBarItem: UITabBarItem = .init(title: routerType.rawValue,
                                   image: tabBarImg?.withRenderingMode(.alwaysOriginal),
                                   selectedImage: tabBarSelectImg?.withRenderingMode(.alwaysOriginal))
-        let selectColor: UIColor = #colorLiteral(red: 0.1044286117, green: 0.6408109069, blue: 0.5236712098, alpha: 1)
+        let selectColor: UIColor = #colorLiteral(red: 0.1058823529, green: 0.6392156863, blue: 0.5254901961, alpha: 1)
         let unselectColor: UIColor = #colorLiteral(red: 0.7490196078, green: 0.7490196078, blue: 0.7490196078, alpha: 1)
         let appearance = UITabBarAppearance()
         appearance.stackedLayoutAppearance.normal.titleTextAttributes = [NSAttributedString.Key.foregroundColor: unselectColor]
