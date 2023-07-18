@@ -22,6 +22,12 @@ class RootTabBarVC: UITabBarController {
         let myTabBar = MyTabBar()
         setValue(myTabBar, forKeyPath: "tabBar")
         viewControllers = AppBootstrap.rootRouters.map(\.routerVc)
+        delegate = self
+    }
+}
+
+extension RootTabBarVC: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
     }
 }
 

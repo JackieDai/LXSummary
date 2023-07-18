@@ -76,8 +76,6 @@ class MyTabBar: UITabBar {
                 addBtn.layer.shadowColor = UIColor.lightGray.cgColor
                 addBtn.layer.shadowOpacity = 0.4
                 addBtn.layer.cornerRadius = item.frame.height * 0.5
-//                addBtn.layer.borderWidth = 5
-//                addBtn.layer.borderColor = UIColor.white.cgColor
             }
         }
     }

@@ -19,6 +19,8 @@
 		FB772A312A61136C00BE41DC /* RootTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB772A302A61136C00BE41DC /* RootTabBarVC.swift */; };
 		FB772A332A61138B00BE41DC /* RootNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB772A322A61138B00BE41DC /* RootNavigationVC.swift */; };
 		FB772A362A611D0000BE41DC /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB772A352A611D0000BE41DC /* R.generated.swift */; };
+		FB7F45E52A66291100B4A9D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F45E42A66291100B4A9D5 /* Constants.swift */; };
+		FB7F45E72A663FFD00B4A9D5 /* ResponseChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F45E62A663FFD00B4A9D5 /* ResponseChain.swift */; };
 		FB96EB2B2A60DEB70068F81D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96EB2A2A60DEB70068F81D /* AppDelegate.swift */; };
 		FB96EB2D2A60DEB70068F81D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96EB2C2A60DEB70068F81D /* SceneDelegate.swift */; };
 		FB96EB2F2A60DEB70068F81D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96EB2E2A60DEB70068F81D /* ViewController.swift */; };
@@ -74,6 +76,8 @@
 		FB772A302A61136C00BE41DC /* RootTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarVC.swift; sourceTree = "<group>"; };
 		FB772A322A61138B00BE41DC /* RootNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationVC.swift; sourceTree = "<group>"; };
 		FB772A352A611D0000BE41DC /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		FB7F45E42A66291100B4A9D5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FB7F45E62A663FFD00B4A9D5 /* ResponseChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseChain.swift; sourceTree = "<group>"; };
 		FB96EB272A60DEB70068F81D /* LXSummary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXSummary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB96EB2A2A60DEB70068F81D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB96EB2C2A60DEB70068F81D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -217,6 +221,7 @@
 		FB772A1C2A60FE4800BE41DC /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				FB7F45E42A66291100B4A9D5 /* Constants.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				FB772A292A61130400BE41DC /* BrowserVC.swift */,
+				FB7F45E62A663FFD00B4A9D5 /* ResponseChain.swift */,
 			);
 			path = Browser;
 			sourceTree = "<group>";
@@ -621,8 +627,10 @@
 				FB772A312A61136C00BE41DC /* RootTabBarVC.swift in Sources */,
 				FBC95C9A2A613E6D00558E0C /* AppBootstrap+rootRouter.swift in Sources */,
 				FBC95C982A613D5F00558E0C /* AppBootstrap.swift in Sources */,
+				FB7F45E52A66291100B4A9D5 /* Constants.swift in Sources */,
 				FB96EB2B2A60DEB70068F81D /* AppDelegate.swift in Sources */,
 				FBCEAC762A6517A2006BEA3B /* MyTabBar.swift in Sources */,
+				FB7F45E72A663FFD00B4A9D5 /* ResponseChain.swift in Sources */,
 				FB772A2F2A61134800BE41DC /* LoginVC.swift in Sources */,
 				FB96EB2D2A60DEB70068F81D /* SceneDelegate.swift in Sources */,
 				FB772A1E2A60FE7100BE41DC /* BaseVC.swift in Sources */,
