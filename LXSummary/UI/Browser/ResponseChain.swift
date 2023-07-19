@@ -6,6 +6,26 @@
 //
 
 import UIKit
+/*
+ iOS 的事件响应机制
+ - 事件的产生：
+    当屏幕接收到触摸后，系统就会封装一个Event 并交给 UIApplication 管理。 通常 UIApplication 会首先把事件  Event send to keyWindow.
+ - 探测链(命中测试)： 用来寻找最合适的响应者，来决定哪一个视图相应 Event(一般是触发 toucheBegain 的方法)
+    主要用到这两个方法
+    ```
+     // recursively calls -pointInside:withEvent:. point is in the receiver's coordinate system
+     - (nullable UIView *)hitTest:(CGPoint)point withEvent:(nullable UIEvent *)event;
+     // default returns YES if point is in bounds
+     - (BOOL)pointInside:(CGPoint)point withEvent:(nullable UIEvent *)event;
+    ```
+    主要过程如下:
+    -1. 检查自身可否接收事件
+    -2. 检查坐标是否在自身内部
+    -3. 从后往前遍历子视图重复执行
+    -4. 按顺序看看平级的兄弟视图
+ - 响应链条: 通过上面的探测链，找到能够响应事件的视图，此时响应链条也就明确了，Event或从 window -> control -> correct response view
+    
+ */
 
 class ResponseChain: BaseVC {
     override func viewDidLoad() {
@@ -104,7 +124,6 @@ class ResonseView1: UIView {
         super.touchesBegan(touches, with: event)
         print(Self.description())
     }
-
 }
 
 class ResonseView2: UIView {
