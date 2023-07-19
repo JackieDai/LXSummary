@@ -10,6 +10,7 @@
 		05BE7F209F7887C8A213513E /* Pods_LXSummary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE287F85357774DDCA5DF616 /* Pods_LXSummary.framework */; };
 		A319E0F992737DF6FD09C777 /* Pods_LXSummaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE50B9CF20090C25BED3A9E5 /* Pods_LXSummaryTests.framework */; };
 		F676C30CCF48B246C18D99E0 /* Pods_LXSummary_LXSummaryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0560FCF33D1160F10DAA605 /* Pods_LXSummary_LXSummaryUITests.framework */; };
+		FB18179B2A677B4C00471604 /* URLSessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB18179A2A677B4C00471604 /* URLSessionVC.swift */; };
 		FB772A1E2A60FE7100BE41DC /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB772A1D2A60FE7100BE41DC /* BaseVC.swift */; };
 		FB772A262A6112DF00BE41DC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB772A252A6112DF00BE41DC /* HomeVC.swift */; };
 		FB772A282A6112EC00BE41DC /* TeaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB772A272A6112EC00BE41DC /* TeaVC.swift */; };
@@ -69,6 +70,7 @@
 		CD4B495B72239894703D8507 /* Pods-LXSummaryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXSummaryTests.debug.xcconfig"; path = "Target Support Files/Pods-LXSummaryTests/Pods-LXSummaryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE287F85357774DDCA5DF616 /* Pods_LXSummary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXSummary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB21D4FA7F6058B7E233971 /* Pods-LXSummary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXSummary.release.xcconfig"; path = "Target Support Files/Pods-LXSummary/Pods-LXSummary.release.xcconfig"; sourceTree = "<group>"; };
+		FB18179A2A677B4C00471604 /* URLSessionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionVC.swift; sourceTree = "<group>"; };
 		FB772A1D2A60FE7100BE41DC /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		FB772A252A6112DF00BE41DC /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FB772A272A6112EC00BE41DC /* TeaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaVC.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 			children = (
 				FB772A292A61130400BE41DC /* BrowserVC.swift */,
 				FB7F45E62A663FFD00B4A9D5 /* ResponseChain.swift */,
+				FB18179A2A677B4C00471604 /* URLSessionVC.swift */,
 			);
 			path = Browser;
 			sourceTree = "<group>";
@@ -639,6 +642,7 @@
 				FB7F45E72A663FFD00B4A9D5 /* ResponseChain.swift in Sources */,
 				FB7F46232A668CE100B4A9D5 /* URLBuilder.swift in Sources */,
 				FB772A2F2A61134800BE41DC /* LoginVC.swift in Sources */,
+				FB18179B2A677B4C00471604 /* URLSessionVC.swift in Sources */,
 				FB96EB2D2A60DEB70068F81D /* SceneDelegate.swift in Sources */,
 				FB7F46252A668D5300B4A9D5 /* NetworkRequestError.swift in Sources */,
 				FB772A1E2A60FE7100BE41DC /* BaseVC.swift in Sources */,

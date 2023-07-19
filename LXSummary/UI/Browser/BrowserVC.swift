@@ -14,7 +14,10 @@ class BrowserVC: BaseVC {
         let vcName: String
     }
 
-    private lazy var dataArr: [DataStruct] = [.init(title: "Response Chain", vcName: "ResponseChain")]
+    private lazy var dataArr: [DataStruct] = [
+        .init(title: "Response Chain", vcName: "ResponseChain"),
+        .init(title: "URLSession Summary", vcName: "URLSessionVC")
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
