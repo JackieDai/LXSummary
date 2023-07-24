@@ -16,6 +16,5 @@ class URLSessionVC: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 }

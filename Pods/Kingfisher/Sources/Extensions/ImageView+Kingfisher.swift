@@ -69,7 +69,7 @@ extension KingfisherWrapper where Base: KFCrossPlatformImageView {
     /// imageView.kf.setImage(with: provider)
     /// ```
     ///
-    /// Internally, this method will use `KingfisherManager` to get the source.
+    /// Internally, **this method will use `KingfisherManager` to get the source.**
     /// Since this method will perform UI changes, you must call it from the main thread.
     /// Both `progressBlock` and `completionHandler` will be also executed in the main thread.
     ///
@@ -81,6 +81,50 @@ extension KingfisherWrapper where Base: KFCrossPlatformImageView {
         progressBlock: DownloadProgressBlock? = nil,
         completionHandler: ((Result<RetrieveImageResult, KingfisherError>) -> Void)? = nil) -> DownloadTask?
     {
+        /*
+         KingfisherParsedOptionsInfo
+          - targetCache : nil
+          - originalCache : nil
+          - downloader : nil
+          - transition : Kingfisher.ImageTransition.none
+          - downloadPriority : 0.5
+          - forceRefresh : false
+          - fromMemoryCacheOrRefresh : false
+          - forceTransition : false
+          - cacheMemoryOnly : false
+          - waitForCache : false
+          - onlyFromCache : false
+          - backgroundDecode : false
+          - preloadAllAnimationData : false
+          - callbackQueue : Kingfisher.CallbackQueue.mainCurrentOrAsync
+          - scaleFactor : 1.0
+          - requestModifier : nil
+          - redirectHandler : nil
+          ▿ processor : DefaultImageProcessor
+            - identifier : ""
+          - imageModifier : nil
+          ▿ cacheSerializer : DefaultCacheSerializer
+            - compressionQuality : 1.0
+            - preferCacheOriginalData : false
+          - keepCurrentImageWhileLoading : false
+          - onlyLoadFirstFrame : false
+          - cacheOriginalImage : false
+          - onFailureImage : nil
+          - alsoPrefetchToMemory : false
+          - loadDiskFileSynchronously : false
+          ▿ diskStoreWriteOptions : NSDataWritingOptions
+            - rawValue : 0
+          - memoryCacheExpiration : nil
+          - memoryCacheAccessExtendingExpiration : Kingfisher.ExpirationExtending.cacheTime
+          - diskCacheExpiration : nil
+          - diskCacheAccessExtendingExpiration : Kingfisher.ExpirationExtending.cacheTime
+          - processingQueue : nil
+          - progressiveJPEG : nil
+          - alternativeSources : nil
+          - retryStrategy : nil
+          - lowDataModeSource : nil
+          - onDataReceived : nil
+         */
         let options = KingfisherParsedOptionsInfo(KingfisherManager.shared.defaultOptions + (options ?? .empty))
         return setImage(with: source, placeholder: placeholder, parsedOptions: options, progressBlock: progressBlock, completionHandler: completionHandler)
     }
@@ -284,17 +328,19 @@ extension KingfisherWrapper where Base: KFCrossPlatformImageView {
     {
         var mutatingSelf = self
         guard let source = source else {
+            // 校验 Source 是否有效， 无效的话直接 call back with error
             mutatingSelf.placeholder = placeholder
             mutatingSelf.taskIdentifier = nil
             completionHandler?(.failure(KingfisherError.imageSettingError(reason: .emptySource)))
             return nil
         }
 
+        // 获取image 的 选项
         var options = parsedOptions
 
         let isEmptyImage = base.image == nil && self.placeholder == nil
         if !options.keepCurrentImageWhileLoading || isEmptyImage {
-            // Always set placeholder while there is no image/placeholder yet.
+            /// ** Always set placeholder while there is no image/placeholder yet. **
             mutatingSelf.placeholder = placeholder
         }
 
@@ -312,7 +358,9 @@ extension KingfisherWrapper where Base: KFCrossPlatformImageView {
             options.onDataReceived = (options.onDataReceived ?? []) + [ImageLoadingProgressSideEffect(block)]
         }
 
-        let task = KingfisherManager.shared.retrieveImage(
+        // 检索图片
+        let finsherManager = KingfisherManager.shared
+        let task = finsherManager.retrieveImage(
             with: source,
             options: options,
             downloadTaskUpdated: { mutatingSelf.imageTask = $0 },

@@ -33,6 +33,7 @@ target 'LXSummary' do
   target 'LXSummaryTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxTest'
   end
 
   target 'LXSummaryUITests' do

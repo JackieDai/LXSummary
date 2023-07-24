@@ -237,6 +237,7 @@ public class KingfisherManager {
         completionHandler: ((Result<RetrieveImageResult, KingfisherError>) -> Void)?) -> DownloadTask?
     {
         var options = options
+        
         if let provider = ImageProgressiveProvider(options, refresh: { image in
             guard let setter = progressiveImageSetter else {
                 return
@@ -347,18 +348,21 @@ public class KingfisherManager {
     {
         let options = context.options
         if options.forceRefresh {
+            // 下载并缓存
             return loadAndCacheImage(
                 source: source,
                 context: context,
                 completionHandler: completionHandler)?.value
             
         } else {
+            // 从 cache 中检索
             let loadedFromCache = retrieveImageFromCache(
                 source: source,
                 context: context,
                 completionHandler: completionHandler)
             
             if loadedFromCache {
+                // 如果从图片中加载了缓存，直接返回
                 return nil
             }
             
@@ -367,7 +371,7 @@ public class KingfisherManager {
                 completionHandler?(.failure(error))
                 return nil
             }
-            
+            // 如果没有 拿到缓存，则会 去网络加载  并  缓存
             return loadAndCacheImage(
                 source: source,
                 context: context,
@@ -474,6 +478,7 @@ public class KingfisherManager {
         }
     }
 
+    // 下载并且缓存 图片
     @discardableResult
     func loadAndCacheImage(
         source: Source,
@@ -495,7 +500,9 @@ public class KingfisherManager {
         case .network(let resource):
             let downloader = options.downloader ?? self.downloader
             let task = downloader.downloadImage(
-                with: resource.downloadURL, options: options, completionHandler: _cacheImage
+                with: resource.downloadURL,
+                options: options,
+                completionHandler: _cacheImage
             )
 
 
@@ -520,12 +527,13 @@ public class KingfisherManager {
     }
     
     /// Retrieves image from memory or disk cache.
+    /// 从 内存 或者 磁盘 读取缓存
     ///
     /// - Parameters:
     ///   - source: The target source from which to get image.
-    ///   - key: The key to use when caching the image.
-    ///   - url: Image request URL. This is not used when retrieving image from cache. It is just used for
-    ///          `RetrieveImageResult` callback compatibility.
+    ///   - key: The key to use when caching the image.  用来缓存的key
+    ///   - url: Image request URL. T**his is not used when retrieving image from cache. It is just used for
+    ///          `RetrieveImageResult` callback compatibility.**
     ///   - options: Options on how to get the image from image cache.
     ///   - completionHandler: Called when the image retrieving finishes, either with succeeded
     ///                        `RetrieveImageResult` or an error.
@@ -538,6 +546,7 @@ public class KingfisherManager {
     ///    will try to check whether an original version of that image is existing or not. If there is already an
     ///    original, Kingfisher retrieves it from cache and processes it. Then, the processed image will be store
     ///    back to cache for later use.
+    ///
     func retrieveImageFromCache(
         source: Source,
         context: RetrievingContext,
@@ -545,8 +554,9 @@ public class KingfisherManager {
     {
         let options = context.options
         // 1. Check whether the image was already in target cache. If so, just get it.
+        // 检车 图片 是否 在 目标 缓存中， 如果在，获取他
         let targetCache = options.targetCache ?? cache
-        let key = source.cacheKey
+        let key = source.cacheKey // The key to use when caching the image.
         let targetImageCached = targetCache.imageCachedType(
             forKey: key, processorIdentifier: options.processor.identifier)
         
@@ -557,6 +567,7 @@ public class KingfisherManager {
                 guard let completionHandler = completionHandler else { return }
                 
                 // TODO: Optimize it when we can use async across all the project.
+                // 异步优化
                 func checkResultImageAndCallback(_ inputImage: KFCrossPlatformImage) {
                     var image = inputImage
                     if image.kf.imageFrameCount != nil && image.kf.imageFrameCount != 1, let data = image.kf.animatedImageData {
@@ -610,10 +621,12 @@ public class KingfisherManager {
                     }
                 }
             }
+            // 如果在缓存中，则直接返回
             return true
         }
 
         // 2. Check whether the original image exists. If so, get it, process it, save to storage and return.
+        // 检查 原始图片
         let originalCache = options.originalCache ?? targetCache
         // No need to store the same file in the same cache again.
         if originalCache === targetCache && options.processor == DefaultImageProcessor.default {

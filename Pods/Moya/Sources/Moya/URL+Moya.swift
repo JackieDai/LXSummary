@@ -1,5 +1,6 @@
 import Foundation
 
+// 根据 TargetType 来初始化  URL
 public extension URL {
 
     /// Initialize URL from Moya's `TargetType`.

@@ -6,11 +6,19 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeVC: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let imgV = UIImageView()
+
+        let url = "https://tse3-mm.cn.bing.net/th/id/OIP-C.g9UbVfyVZX-SfD09JcYr5QHaEK?pid=ImgDet&rs=1"
+
+        imgV.kf.setImage(with: URL(string: url))
+
+        let arr = Array<Int>()
     }
 
     /*
