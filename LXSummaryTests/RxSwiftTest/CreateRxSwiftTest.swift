@@ -59,7 +59,7 @@ final class CreateRxSwiftTest: XCTestCase {
         var result = 0
 
         let observable = Observable<Int>.timer(.seconds(1), period: .seconds(1), scheduler: MainScheduler())
-        observable.subscribe { value in
+        observable.take(11).subscribe { value in
             print("value", value)
             result = value
             if value == target { exp.fulfill() }
@@ -316,6 +316,18 @@ final class CreateRxSwiftTest: XCTestCase {
             }
         }
         observable.subscribe(observe).disposed(by: disposeBag)
+
+        observable.subscribe { value in
+            print("value == ", value)
+        } onError: { err in
+            print("err == ", err)
+        } onCompleted: {
+            print("completed")
+        } onDisposed: {
+            print("onDisposed")
+        }
+        .disposed(by: disposeBag)
+
         XCTAssertTrue(true)
     }
 }

@@ -12,7 +12,10 @@
 		F676C30CCF48B246C18D99E0 /* Pods_LXSummary_LXSummaryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0560FCF33D1160F10DAA605 /* Pods_LXSummary_LXSummaryUITests.framework */; };
 		FB140A002A6E5387006C712B /* JKRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1409FF2A6E5387006C712B /* JKRxSwiftTests.swift */; };
 		FB140A022A6E6311006C712B /* CreateRxSwiftTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB140A012A6E6311006C712B /* CreateRxSwiftTest.swift */; };
+		FB140A042A6F61CA006C712B /* SixSpecialObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB140A032A6F61CA006C712B /* SixSpecialObservable.swift */; };
+		FB140A062A6F9B58006C712B /* SpecialSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB140A052A6F9B58006C712B /* SpecialSubject.swift */; };
 		FB18179B2A677B4C00471604 /* URLSessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB18179A2A677B4C00471604 /* URLSessionVC.swift */; };
+		FB36D6E52A6FA5BF00E6583B /* CombiningOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36D6E42A6FA5BF00E6583B /* CombiningOperators.swift */; };
 		FB3933712A6A550C00E23EA0 /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3933702A6A550C00E23EA0 /* BaseTestCase.swift */; };
 		FB3933742A6A55C100E23EA0 /* FileManager+AlamofireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3933732A6A55C100E23EA0 /* FileManager+AlamofireTests.swift */; };
 		FB3933772A6A569200E23EA0 /* AFError+AlamofireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3933752A6A569200E23EA0 /* AFError+AlamofireTests.swift */; };
@@ -83,7 +86,10 @@
 		EEB21D4FA7F6058B7E233971 /* Pods-LXSummary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXSummary.release.xcconfig"; path = "Target Support Files/Pods-LXSummary/Pods-LXSummary.release.xcconfig"; sourceTree = "<group>"; };
 		FB1409FF2A6E5387006C712B /* JKRxSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKRxSwiftTests.swift; sourceTree = "<group>"; };
 		FB140A012A6E6311006C712B /* CreateRxSwiftTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRxSwiftTest.swift; sourceTree = "<group>"; };
+		FB140A032A6F61CA006C712B /* SixSpecialObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixSpecialObservable.swift; sourceTree = "<group>"; };
+		FB140A052A6F9B58006C712B /* SpecialSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialSubject.swift; sourceTree = "<group>"; };
 		FB18179A2A677B4C00471604 /* URLSessionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionVC.swift; sourceTree = "<group>"; };
+		FB36D6E42A6FA5BF00E6583B /* CombiningOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombiningOperators.swift; sourceTree = "<group>"; };
 		FB3933702A6A550C00E23EA0 /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
 		FB3933732A6A55C100E23EA0 /* FileManager+AlamofireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+AlamofireTests.swift"; sourceTree = "<group>"; };
 		FB3933752A6A569200E23EA0 /* AFError+AlamofireTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AFError+AlamofireTests.swift"; sourceTree = "<group>"; };
@@ -187,6 +193,9 @@
 			children = (
 				FB1409FF2A6E5387006C712B /* JKRxSwiftTests.swift */,
 				FB140A012A6E6311006C712B /* CreateRxSwiftTest.swift */,
+				FB140A032A6F61CA006C712B /* SixSpecialObservable.swift */,
+				FB140A052A6F9B58006C712B /* SpecialSubject.swift */,
+				FB36D6E42A6FA5BF00E6583B /* CombiningOperators.swift */,
 			);
 			path = RxSwiftTest;
 			sourceTree = "<group>";
@@ -739,6 +748,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB140A062A6F9B58006C712B /* SpecialSubject.swift in Sources */,
 				FB140A002A6E5387006C712B /* JKRxSwiftTests.swift in Sources */,
 				FB140A022A6E6311006C712B /* CreateRxSwiftTest.swift in Sources */,
 				FB39337C2A6A569E00E23EA0 /* Request+AlamofireTests.swift in Sources */,
@@ -748,8 +758,10 @@
 				FB3933772A6A569200E23EA0 /* AFError+AlamofireTests.swift in Sources */,
 				FB39339B2A6A582A00E23EA0 /* RequestTests.swift in Sources */,
 				FB3933742A6A55C100E23EA0 /* FileManager+AlamofireTests.swift in Sources */,
+				FB140A042A6F61CA006C712B /* SixSpecialObservable.swift in Sources */,
 				FB39337B2A6A569E00E23EA0 /* Result+AlamofireTests.swift in Sources */,
 				FB3933802A6A571300E23EA0 /* NSLoggingEventMonitor.swift in Sources */,
+				FB36D6E52A6FA5BF00E6583B /* CombiningOperators.swift in Sources */,
 				FB39337F2A6A571300E23EA0 /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
