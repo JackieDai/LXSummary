@@ -7,6 +7,8 @@
 
 import UIKit
 import Kingfisher
+import RxSwift
+import RxCocoa
 
 class HomeVC: BaseVC {
 
@@ -17,8 +19,15 @@ class HomeVC: BaseVC {
         let url = "https://tse3-mm.cn.bing.net/th/id/OIP-C.g9UbVfyVZX-SfD09JcYr5QHaEK?pid=ImgDet&rs=1"
 
         imgV.kf.setImage(with: URL(string: url))
+    }
 
-        let arr = Array<Int>()
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        /*
+        let result = Observable<Int>.timer(.seconds(1), scheduler: MainScheduler())
+        result.subscribe { value in
+            print("value", value)
+        }.disposed(by: disposeBag)*/
     }
 
     /*

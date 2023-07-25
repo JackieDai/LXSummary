@@ -10,7 +10,7 @@ import RxSwift
 import RxTest
 
 final class JKRxSwiftTests: XCTestCase {
-    
+
     var disposeBag = DisposeBag()
 
     override func setUpWithError() throws {
@@ -35,18 +35,7 @@ final class JKRxSwiftTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
+
     func testObservable() {
-        let obv: Observable<Int> = .create { observe in
-            observe.onNext(12)
-            observe.onNext(13)
-            observe.onCompleted()
-            return Disposables.create {}
-        }
-        
-//        obv.subscribe { <#Event<Int>#> in
-//            <#code#>
-//        }
-        obv.subscribe(<#T##observer: ObserverType##ObserverType#>)
     }
 }
