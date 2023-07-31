@@ -45,7 +45,7 @@ struct _R {
     var accentColor: RswiftResources.ColorResource { .init(name: "AccentColor", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 11 images.
+  /// This `_R.image` struct is generated, and contains static references to 16 images.
   struct image {
     let bundle: Foundation.Bundle
 
@@ -54,6 +54,21 @@ struct _R {
 
     /// Image `launchImageContent`.
     var launchImageContent: RswiftResources.ImageResource { .init(name: "launchImageContent", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `p700-300-1`.
+    var p7003001: RswiftResources.ImageResource { .init(name: "p700-300-1", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `p700-300-2`.
+    var p7003002: RswiftResources.ImageResource { .init(name: "p700-300-2", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `p700-300-3`.
+    var p7003003: RswiftResources.ImageResource { .init(name: "p700-300-3", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `p700-300-4`.
+    var p7003004: RswiftResources.ImageResource { .init(name: "p700-300-4", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `p700-300-5`.
+    var p7003005: RswiftResources.ImageResource { .init(name: "p700-300-5", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `tabBar_plus`.
     var tabBar_plus: RswiftResources.ImageResource { .init(name: "tabBar_plus", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }

@@ -24,6 +24,12 @@ final class LXSummaryTests: XCTestCase {
         // Any test you write for XCTest can be annotated as throws and async.
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+
+        // returns the absoulte value of the given num. 绝对值
+        let x = 128
+        // x == -128
+        let y = abs(x)
+        XCTAssertEqual(x, y)
     }
 
     func testPerformanceExample() throws {

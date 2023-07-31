@@ -47,6 +47,9 @@
 		FB96EB422A60DEB80068F81D /* LXSummaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96EB412A60DEB80068F81D /* LXSummaryTests.swift */; };
 		FB96EB4C2A60DEB80068F81D /* LXSummaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96EB4B2A60DEB80068F81D /* LXSummaryUITests.swift */; };
 		FB96EB4E2A60DEB80068F81D /* LXSummaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96EB4D2A60DEB80068F81D /* LXSummaryUITestsLaunchTests.swift */; };
+		FBA65A5D2A7746630002AB18 /* KioskCycleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA65A5C2A7746630002AB18 /* KioskCycleLayout.swift */; };
+		FBA65A5F2A774B000002AB18 /* KioskCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA65A5E2A774B000002AB18 /* KioskCycleView.swift */; };
+		FBA65A612A7750D70002AB18 /* LxCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA65A602A7750D70002AB18 /* LxCycleView.swift */; };
 		FBC95C982A613D5F00558E0C /* AppBootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC95C972A613D5F00558E0C /* AppBootstrap.swift */; };
 		FBC95C9A2A613E6D00558E0C /* AppBootstrap+rootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC95C992A613E6D00558E0C /* AppBootstrap+rootRouter.swift */; };
 		FBCEAC762A6517A2006BEA3B /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCEAC752A6517A2006BEA3B /* MyTabBar.swift */; };
@@ -125,6 +128,9 @@
 		FB96EB472A60DEB80068F81D /* LXSummaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXSummaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB96EB4B2A60DEB80068F81D /* LXSummaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXSummaryUITests.swift; sourceTree = "<group>"; };
 		FB96EB4D2A60DEB80068F81D /* LXSummaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXSummaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBA65A5C2A7746630002AB18 /* KioskCycleLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskCycleLayout.swift; sourceTree = "<group>"; };
+		FBA65A5E2A774B000002AB18 /* KioskCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskCycleView.swift; sourceTree = "<group>"; };
+		FBA65A602A7750D70002AB18 /* LxCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LxCycleView.swift; sourceTree = "<group>"; };
 		FBC95C972A613D5F00558E0C /* AppBootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBootstrap.swift; sourceTree = "<group>"; };
 		FBC95C992A613E6D00558E0C /* AppBootstrap+rootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppBootstrap+rootRouter.swift"; sourceTree = "<group>"; };
 		FBCEAC752A6517A2006BEA3B /* MyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
@@ -198,6 +204,16 @@
 				FB36D6E42A6FA5BF00E6583B /* CombiningOperators.swift */,
 			);
 			path = RxSwiftTest;
+			sourceTree = "<group>";
+		};
+		FB36D6E62A6FB62800E6583B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FBA65A5C2A7746630002AB18 /* KioskCycleLayout.swift */,
+				FBA65A5E2A774B000002AB18 /* KioskCycleView.swift */,
+				FBA65A602A7750D70002AB18 /* LxCycleView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FB39336F2A6A54ED00E23EA0 /* AlamofireTest */ = {
@@ -325,6 +341,7 @@
 		FB772A212A61126700BE41DC /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FB36D6E62A6FB62800E6583B /* View */,
 				FB772A252A6112DF00BE41DC /* HomeVC.swift */,
 			);
 			path = Home;
@@ -727,14 +744,17 @@
 				FB772A262A6112DF00BE41DC /* HomeVC.swift in Sources */,
 				FB772A312A61136C00BE41DC /* RootTabBarVC.swift in Sources */,
 				FBC95C9A2A613E6D00558E0C /* AppBootstrap+rootRouter.swift in Sources */,
+				FBA65A612A7750D70002AB18 /* LxCycleView.swift in Sources */,
 				FBC95C982A613D5F00558E0C /* AppBootstrap.swift in Sources */,
 				FB7F45E52A66291100B4A9D5 /* Constants.swift in Sources */,
 				FB96EB2B2A60DEB70068F81D /* AppDelegate.swift in Sources */,
+				FBA65A5F2A774B000002AB18 /* KioskCycleView.swift in Sources */,
 				FBCEAC762A6517A2006BEA3B /* MyTabBar.swift in Sources */,
 				FB7F45E72A663FFD00B4A9D5 /* ResponseChain.swift in Sources */,
 				FB7F46232A668CE100B4A9D5 /* URLBuilder.swift in Sources */,
 				FB772A2F2A61134800BE41DC /* LoginVC.swift in Sources */,
 				FB18179B2A677B4C00471604 /* URLSessionVC.swift in Sources */,
+				FBA65A5D2A7746630002AB18 /* KioskCycleLayout.swift in Sources */,
 				FB96EB2D2A60DEB70068F81D /* SceneDelegate.swift in Sources */,
 				FB7F46252A668D5300B4A9D5 /* NetworkRequestError.swift in Sources */,
 				FB772A1E2A60FE7100BE41DC /* BaseVC.swift in Sources */,
