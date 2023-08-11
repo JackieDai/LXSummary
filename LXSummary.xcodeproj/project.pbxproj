@@ -50,6 +50,8 @@
 		FBA65A5D2A7746630002AB18 /* KioskCycleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA65A5C2A7746630002AB18 /* KioskCycleLayout.swift */; };
 		FBA65A5F2A774B000002AB18 /* KioskCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA65A5E2A774B000002AB18 /* KioskCycleView.swift */; };
 		FBA65A612A7750D70002AB18 /* LxCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA65A602A7750D70002AB18 /* LxCycleView.swift */; };
+		FBC0087F2A7B48C6000103B9 /* QFMultiResponseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC0087E2A7B48C6000103B9 /* QFMultiResponseScrollView.swift */; };
+		FBC008812A7B4965000103B9 /* QFFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC008802A7B4965000103B9 /* QFFirstViewController.swift */; };
 		FBC95C982A613D5F00558E0C /* AppBootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC95C972A613D5F00558E0C /* AppBootstrap.swift */; };
 		FBC95C9A2A613E6D00558E0C /* AppBootstrap+rootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC95C992A613E6D00558E0C /* AppBootstrap+rootRouter.swift */; };
 		FBCEAC762A6517A2006BEA3B /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCEAC752A6517A2006BEA3B /* MyTabBar.swift */; };
@@ -131,6 +133,8 @@
 		FBA65A5C2A7746630002AB18 /* KioskCycleLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskCycleLayout.swift; sourceTree = "<group>"; };
 		FBA65A5E2A774B000002AB18 /* KioskCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskCycleView.swift; sourceTree = "<group>"; };
 		FBA65A602A7750D70002AB18 /* LxCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LxCycleView.swift; sourceTree = "<group>"; };
+		FBC0087E2A7B48C6000103B9 /* QFMultiResponseScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFMultiResponseScrollView.swift; sourceTree = "<group>"; };
+		FBC008802A7B4965000103B9 /* QFFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QFFirstViewController.swift; sourceTree = "<group>"; };
 		FBC95C972A613D5F00558E0C /* AppBootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBootstrap.swift; sourceTree = "<group>"; };
 		FBC95C992A613E6D00558E0C /* AppBootstrap+rootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppBootstrap+rootRouter.swift"; sourceTree = "<group>"; };
 		FBCEAC752A6517A2006BEA3B /* MyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
@@ -368,6 +372,8 @@
 		FB772A242A6112C600BE41DC /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				FBC008802A7B4965000103B9 /* QFFirstViewController.swift */,
+				FBC0087D2A7B48B6000103B9 /* View */,
 				FB772A2B2A61131100BE41DC /* SettingVC.swift */,
 			);
 			path = Setting;
@@ -431,6 +437,14 @@
 				FB96EB4D2A60DEB80068F81D /* LXSummaryUITestsLaunchTests.swift */,
 			);
 			path = LXSummaryUITests;
+			sourceTree = "<group>";
+		};
+		FBC0087D2A7B48B6000103B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FBC0087E2A7B48C6000103B9 /* QFMultiResponseScrollView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FBCEAC742A651785006BEA3B /* CustomTabBar */ = {
@@ -743,12 +757,14 @@
 				FB772A282A6112EC00BE41DC /* TeaVC.swift in Sources */,
 				FB772A262A6112DF00BE41DC /* HomeVC.swift in Sources */,
 				FB772A312A61136C00BE41DC /* RootTabBarVC.swift in Sources */,
+				FBC0087F2A7B48C6000103B9 /* QFMultiResponseScrollView.swift in Sources */,
 				FBC95C9A2A613E6D00558E0C /* AppBootstrap+rootRouter.swift in Sources */,
 				FBA65A612A7750D70002AB18 /* LxCycleView.swift in Sources */,
 				FBC95C982A613D5F00558E0C /* AppBootstrap.swift in Sources */,
 				FB7F45E52A66291100B4A9D5 /* Constants.swift in Sources */,
 				FB96EB2B2A60DEB70068F81D /* AppDelegate.swift in Sources */,
 				FBA65A5F2A774B000002AB18 /* KioskCycleView.swift in Sources */,
+				FBC008812A7B4965000103B9 /* QFFirstViewController.swift in Sources */,
 				FBCEAC762A6517A2006BEA3B /* MyTabBar.swift in Sources */,
 				FB7F45E72A663FFD00B4A9D5 /* ResponseChain.swift in Sources */,
 				FB7F46232A668CE100B4A9D5 /* URLBuilder.swift in Sources */,
